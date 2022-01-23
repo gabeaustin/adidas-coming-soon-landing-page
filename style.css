@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "AdiHaus";
+  src: URL("https://assets.codepen.io/6060109/adihaus_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* start - good to add to all projects */
+body,
+html {
+  font-family: "AdiHaus", sans-serif;
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+
+  background-color: grey;
+  /* for testing */
+}
+
+/* end - good to add to all projects */
+
+.main-container {
+  background-color: #f2f2f2;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo {
+  width: 71px;
+  height: 48px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.main-image-container {
+  height: 250px;
+  background-image: url("https://i.postimg.cc/mDBvPnh1/athlete-girl.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cta-container {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+h2,
+.cta-paragraph {
+  margin: 0;
+}
+
+h2 {
+  letter-spacing: 5px;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+h2#cta-heading-first-word {
+  color: #cd3a24;
+  line-height: 42px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2.cta-heading {
+  color: #423a3a;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-paragraph {
+  color: #333;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.gather-info-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-email,
+.submit-button {
+  font-size: 20px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 48px;
+  margin-top: 40px;
+}
+
+.input-email {
+  width: 80%;
+  padding: 20px;
+}
+
+.submit-button {
+  width: 20%;
+}
+
+.input-email::placeholder,
+.input-email::-webkit-input-placeholder,
+.input-email:-moz-placeholder,
+.input-email::-moz-placeholder,
+.input-email:-ms-input-placeholder {
+  color: #d8d8d8;
+}
+
+input.submit-button {
+  color: #fff;
+  background-color: #000;
+  margin-left: -15px;
+  font-weight: 700;
+}
